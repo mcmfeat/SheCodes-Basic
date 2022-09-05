@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crossfit-basics</title>
+    <style>
+
+      body {
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+        color: rgb(240, 248, 255);
+        margin: 10px;
+        background-color: rgba(0, 0, 0, 0.98);
+      }
+
+      h1 {
+        text-align: center;
+        font-size: 3em;
+        font-variant: small-caps;
+      }
+
+      h2 {
+        text-align: center;
+        font-weight: 500;
+      }
+
+      ul {
+        list-style: none;
+        margin: 10px auto;
+        padding: 0;
+        text-align: center;
+      }
+
+      li {
+        display: inline;
+        margin: 0 auto;
+      }
+
+      img {
+        max-width: 30%;
+        border-radius: 5%;
+        padding: 2px;   
+      }
+      
+     hr {
+        margin: 0 auto;
+        display: block;
+        border-top: 1px dashed rgba(240, 248, 255, 0.5);
+       }
+
+      p {
+          text-align: center;
+          line-height: 20px;
+      }
+
+      div {
+        text-align: justify;
+        line-height: 20px;
+        margin: 0 auto;
+        padding: 30px 20px;
+      }
+
+      a {
+        font-size: 14px;
+        color: rgb(47, 145, 145);
+        display: block;
+        width: fit-content;
+        margin: 0 0 0 auto;
+        text-decoration: none;
+        transition: all 200ms ease-in-out;
+      }
+
+      a:hover {
+        color: rgba(47, 145, 145, 0.5);
+        text-decoration: underline;
+      }
+
+      button {
+        color: rgb(240, 248, 255);
+        background-color: rgb(47, 145, 145);
+        font-size: 1.5em;
+        text-transform: uppercase;
+        display: block;
+        margin: 20px auto;
+        padding: 15px 25px;
+        border: 1px solid rgba(47, 145, 145, 0.8);
+        border-radius: 5%;
+        box-shadow: 2px 3px 5px 5px rgba(56, 56, 56, 0.411);
+        transition: all 100ms ease-in-out;
+      }
+
+      button:hover {
+        background-color: rgba(47, 145, 145, 0.8);
+        cursor: pointer;
+      }
+
+      .container {
+        width: 50%;
+        background: radial-gradient(
+          circle at 10% 30%,
+          rgb(87, 108, 117) 30%,
+          rgb(41, 50, 55) 100%
+        );
+        border-radius: 3%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+    <h1>Cross<span style="color: rgb(224, 31, 31)">Fit</span> basics</h1>
+    
+    <h2>Learn CrossFit basics quickly!</h2>
+    
+    <ul>
+      <li></li>
+    <img src="https://feelcrossfit.com/wp-content/uploads/2014/11/Crossfit.jpg"
+      alt="crossfitbox"
+    />
+    </li>
+    <li>
+      <img src="https://fittoprove.com/wp-content/uploads/2016/12/crossfit.jpg"
+      alt="crossfitgirl"
+    /> 
+    </li>
+    </ul>
+
+    <hr>
+    <p>
+      Discover how to build <strong>strength</strong> and improve your life
+      quality!
+    </p>
+    <hr>
+
+    <div>
+      CrossFit® is promoted as both a physical exercise philosophy and a
+      competitive fitness sport, incorporating elements from <em>high-intensity</em>
+      interval training, Olympic weightlifting, plyometrics, powerlifting,
+      gymnastics, kettlebell lifting, calisthenics, strongman, and other
+      exercises. It is practiced by members in CrossFit-affiliated gyms, and by
+      individuals who complete daily workouts (otherwise known as "<strong>WODs</strong>" or
+      "Workouts of the Day").
+    </div>
+
+    <a href="https://en.wikipedia.org/wiki/CrossFit" target="_blank"
+      >More on Wikipedia</a>
+    
+    <br>
+    
+    <button>Start now 🏆</button>
+    </div>
+    <script>
+      function information (){
+      let name = prompt("What is you name?");
+      let email = prompt("What is your email address?");
+
+      name = name.toUpperCase().trim();
+      
+      if (isEmpty(name) || isEmpty(email)) {
+      alert(`We need your name and e-mail to proceed! 🙃`);
+      }
+      else {
+      alert(`Thanks ${name}, we will be in touch soon. Have a nice workout! 🏋️‍♀️ `);
+      }
+      }
+
+      function isEmpty(value) {
+        if (value === "") {
+          return true
+        } else {return false}
+      }
+
+      let applyButton = document.querySelector("button");
+      applyButton.addEventListener("click", information);
+
+    </script>
+  </body>
+</html>
